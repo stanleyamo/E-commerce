@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 export default function Cart() {
     const { cart, removeFromCart, clearCart } = useCart();
 
-    // Total price
-    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     if (cart.length === 0) {
         return (
@@ -22,9 +21,9 @@ export default function Cart() {
         <div className="p-6 max-w-4xl mx-auto">
             <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
 
-            {cart.map((item, idx) => (
+            {cart.map((item) => (
                 <div
-                    key={idx}
+                    key={`${item.id}-${item.size}`}
                     className="flex justify-between items-center mb-4 border-b pb-3"
                 >
                     <div className="flex items-center gap-4">
@@ -37,7 +36,9 @@ export default function Cart() {
                             <h2 className="font-semibold">{item.name}</h2>
                             <p>Size: {item.size}</p>
                             <p>Qty: {item.quantity}</p>
-                            <p className="text-blue-600">GHC {item.price}</p>
+                            <p className="text-blue-600">
+                                GHC {item.price * item.quantity}
+                            </p>
                         </div>
                     </div>
                     <button
@@ -65,4 +66,4 @@ export default function Cart() {
             </div>
         </div>
     );
-}      
+}

@@ -8,8 +8,13 @@ export const products: Product[] = [
     category: "African Wear",
     price: 200,
     image: "/images/african1.jpg",
-    images: ["/images/african1.jpg", "/images/african1-2.jpg", "/images/african1-3.jpg"],
-    description: "A beautiful African Kente dress made from traditional fabric. Perfect for ceremonies and special occasions.",
+    images: [
+      "/images/african1.jpg",
+      "/images/african1-2.jpg",
+      "/images/african1-3.jpg",
+    ],
+    description:
+      "A beautiful African Kente dress made from traditional fabric. Perfect for ceremonies and special occasions.",
     sizes: ["S", "M", "L", "XL"],
     sizePrice: { S: 0, M: 20, L: 40, XL: 60 },
   },
@@ -20,7 +25,8 @@ export const products: Product[] = [
     price: 180,
     image: "/images/african2.jpg",
     images: ["/images/african2.jpg", "/images/african2-2.jpg"],
-    description: "Vibrant Ankara skirt that pairs well with matching tops or casual wear.",
+    description:
+      "Vibrant Ankara skirt that pairs well with matching tops or casual wear.",
     sizes: ["S", "M", "L", "XL"],
     sizePrice: { S: 0, M: 15, L: 30, XL: 45 },
   },
@@ -46,7 +52,7 @@ export const products: Product[] = [
     images: ["/images/import1.jpg", "/images/import1-2.jpg"],
     description: "Premium cotton shirt imported from Italy, soft and breathable.",
     sizes: ["S", "M", "L", "XL"],
-    sizePrice: { S: 0, M: 15, L: 25, XL: 35 },
+    sizePrice: { S: 0, M: 15, L: 30, XL: 45 },
   },
   {
     id: 5,
@@ -81,7 +87,7 @@ export const products: Product[] = [
     images: ["/images/perfume1.jpg", "/images/perfume1-2.jpg"],
     description: "A luxurious fragrance with hints of floral and citrus notes.",
     sizes: ["50ml", "100ml"],
-    sizePrice: { "50ml": 0, "100ml": 80 },
+    sizePrice: { "50ml": 0, "100ml": 100 },
   },
   {
     id: 8,
@@ -92,7 +98,7 @@ export const products: Product[] = [
     images: ["/images/perfume2.jpg", "/images/perfume2-2.jpg"],
     description: "Distinctive and long-lasting scent perfect for special occasions.",
     sizes: ["50ml", "100ml"],
-    sizePrice: { "50ml": 0, "100ml": 70 },
+    sizePrice: { "50ml": 0, "100ml": 80 },
   },
   {
     id: 9,
@@ -103,6 +109,6 @@ export const products: Product[] = [
     images: ["/images/perfume3.jpg", "/images/perfume3-2.jpg"],
     description: "Exquisite perfume with a rich and unique aroma.",
     sizes: ["50ml", "100ml"],
-    sizePrice: { "50ml": 0, "100ml": 100 },
+    sizePrice: { "50ml": 0, "100ml": 120 },
   },
 ];
